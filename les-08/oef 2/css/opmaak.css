@@ -1,0 +1,26 @@
+.container {
+    box-sizing: border-box;
+    grid-template-areas: 'header header aside main footer footer';
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 250px auto 75px;
+}
+.header {
+grid-area: header;
+background-color: blue;
+}
+
+.aside {
+grid-area: aside;
+background-color: green;
+}
+
+.main {
+grid-area: main;
+background-color: black;
+}
+
+.footer {
+grid-area: footer;
+background-color: orange;
+}

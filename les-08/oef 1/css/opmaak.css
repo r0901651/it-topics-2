@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+.compass {
+    background-image: url(../data/img/kompas.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.label {
+    font-family: 'Square Peg';
+    font-size: 28px;
+    color: white;
+}
+.noord {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform:translate(0, -50%) ;
+}
+
+.oost {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform:translate(0, -50%) ;
+}
+
+.zuid {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform:translate(0, -50%) ;
+}
+
+.west {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform:translate(0, -50%) ;
+}
