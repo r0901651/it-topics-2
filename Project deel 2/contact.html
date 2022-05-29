@@ -7,56 +7,119 @@
     <meta name="Author" content="Anthony Van Roy">
     <title>Index_Pagina</title>
     <link rel="icon" type="image/x-icon" href="data/img/favicon.ico">
-    <link href="./css/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./css/stylesheet.css" rel="stylesheet">
+    <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Anthony Van Roy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Homepagina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="over_mij.html">Over mezelf</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobby.html">Hobby's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ervaring.html">Ervaring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <h2>Contact</h2>
     <hr>
-    <div class="Pagina" style="float: left;">
-    <form action="verzending.php" method="post">
-        <div>
-            <label for="naam">Naam: <input type="text" id="naam" placeholder="naam" name="naam" required></label>
+    <div class="contact-formulier">
+    <section class="mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Neem contact op</h2>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Naam</label>
+                            <input type="text" id="naam" name="naam" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Onderwerp</label>
+                            <input type="text" id="onderwerp" name="onderwerp" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <label for="message">Bericht</label>
+                            <textarea type="text" id="bericht" name="bericht" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center text-md-left">
+                    <button type="submit" class="btn btn-primary">Verzenden</button>
+                </div>
+            </form>
         </div>
-        <div>
-            <label for="email">Email: <input type="email" id="email" placeholder="voorbeeld@mail.com" name="email" required></label>
-        </div>
-        <div>
-            <label for="bericht">Bericht: <textarea rows="7" id="reactie" placeholder="Typ hier tekst" name="reactie" required></textarea></label>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Verzenden"/>
-        </div>
-    </form>
+    </div>
+    </section>
+    </div>
+    <div>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="./data/img/facebook.svg" alt="facebook" width="40px">
+        </a>
+        <a href="tel:047777777777">
+            <img src="./data/img/phone.svg" alt="phone" width="40px">
+        </a>
+    </div>
     <br>
     <hr>
-    <form action="index.html">
-        <input type="submit" value="Homepagina">
-    </form>
     <br>
     </div>
+    <br>
+    <div class="pagebutton">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="ervaring.html" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <br>
 </div>
-<div class="Navigatie" style="float: right;">
-    <table border="1">
-        <caption>Navigatie</caption>
-            <tr>
-                <td><a href="index.html">Homepagina</a></td>
-            </tr>
-            <tr>
-                <td><a href="over_mij.html">Over mezelf</a></td>
-            </tr>
-            <tr>
-                <td><a href="hobby.html">Hobby's</a></td>
-            </tr>
-            <tr>
-                <td><a href="cv.html">CV</a></td>
-            </tr>
-            <tr>
-                <td><a href="ervaring.html">Ervaring</a></td>
-            </tr>
-            <tr>
-                <td><a href="contact.html">Contact</a></td>
-            </tr>
-    </table>
-</div>
+<footer class="bg-dark text-center text-white">
+    <div>
+        <p>Anthony Van Roy &copy; 2022</p>
+    </div>
+</footer>
 </body>
+</html>

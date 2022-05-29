@@ -7,51 +7,105 @@
     <meta name="Author" content="Anthony Van Roy">
     <title>Ervaring</title>
     <link rel="icon" type="image/x-icon" href="data/img/favicon.ico">
-    <link href="./css/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./css/stylesheet.css" rel="stylesheet">
+    <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Anthony Van Roy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Homepagina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="over_mij.html">Over mezelf</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobby.html">Hobby's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="ervaring.html">Ervaring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <h2>Ervaring</h2>
     <hr>
-    <div class="Pagina" style="float: left;">
+    <div class="Pagina">
         <h3>Industriële kastenbouw : </h3>
     <p>
         Wegens mijn vorige opleiding, heb ik mijn stage en vakantiewerk bij Dymotec nv. <br>
         in Olen afgelegd hier had ik de taak om industriële kasten van 0 tot 100 te maken van uitboren tot plannen en bekabelen. <br>
         In de afbeeldingen kan je een van de grote projecten bekijken, dit project was voor een industriële menger in het bedrijf "Soudal" aan te sturen. <br>
     </p>
-    <img src="data/img/kast1.jpeg" alt="industriële kast (Foto)" Title="Kast1" width="200">
-    <img src="data/img/kast2.jpeg" alt="industriële kast (Foto)" Title="Kast2" width="200">
-    <img src="data/img/kast3.jpeg" alt="industriële kast (Foto)" Title="Kast3" width="200">
+    <div class="slideshow">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="data/img/kast1.jpeg" class="d-block w-100" alt="kast1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="data/img/kast2.jpeg" class="d-block w-100" alt="kast2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="data/img/kast3.jpeg" class="d-block w-100" alt="kast3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
     <br>
     <p>Op het vlak van IT heb ik nog geen werkervaring op een efectieve werkvloer opgedaan.</p>
     <br>
     <hr>
-    <form action="contact.html">
-        <input type="submit" value="Volgende">
-    </form>
+    <br>
+    <div class="pagebutton">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="cv.html" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="contact.html">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     <br>
     </div>
-    <div class="Navigatie" style="float: right;">
-        <table border="1">
-            <caption>Navigatie</caption>
-                <tr>
-                    <td><a href="index.html">Homepagina</a></td>
-                </tr>
-                <tr>
-                    <td><a href="over_mij.html">Over mezelf</a></td>
-                </tr>
-                <tr>
-                    <td><a href="hobby.html">Hobby's</a></td>
-                </tr>
-                <tr>
-                    <td><a href="cv.html">CV</a></td>
-                </tr>
-                <tr>
-                    <td><a href="ervaring.html">Ervaring</a></td>
-                </tr>
-                <tr>
-                    <td><a href="contact.html">Contact</a></td>
-                </tr>
-        </table>
-    </div>
+    <footer class="bg-dark text-center text-white">
+        <p>Anthony Van Roy &copy; 2022</p>
+    </footer>
 </body>
+</html>

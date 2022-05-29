@@ -7,12 +7,91 @@
     <meta name="Author" content="Anthony Van Roy">
     <title>Hobby's en interesses</title>
     <link rel="icon" type="image/x-icon" href="data/img/favicon.ico">
-    <link href="./css/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./css/stylesheet.css" rel="stylesheet">
+    <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Anthony Van Roy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Homepagina</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="over_mij.html">Over mezelf</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="hobby.html">Hobby's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ervaring.html">Ervaring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <h2>Hobby's en interesses</h2>
+    <div class="slideshow">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="data/img/pc.jpg" class="d-block w-100" alt="pc">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Custom pc builds</h5>
+                  <p>Krachtig en naar keuze.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="data/img/Fiets.jpg" class="d-block w-100" alt="fiets">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fietsen</h5>
+                  <p>Als IT er moet je ook nog bewegen.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="data/img/server.jpeg" class="d-block w-100" alt="server">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Servers</h5>
+                  <p>Verbonden met elkaar en de wereld</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="data/img/IOT.jpg" class="d-block w-100" alt="IOT">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>IOT</h5>
+                  <p>De wereld gaat vooruit net zoals u en uw apparaten.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
     <hr/>
-    <div class="Pagina" style="float: left;">
     <h3>Custom pc builds : </h3>
     <p>
         Een van mijn hobby's is het bouwen van custom build pc's, mijn passie hiervoor is gekomen omdat toen ik klein was ik mij altijd afvroeg 
@@ -20,20 +99,17 @@
         componenten zijn en hoe ik een <br> computer in elkaar moest klussen
     </p>
     <p>Voortaan maak ik nu ook voor vrienden en kennissen custom builds wanneer ik tijd heb.</p>
-    <img src="data/img/pc.jpg" alt="Afbeelding custom build" title="Custom Build" width="400">
     <h3>Fietsen : </h3>
     <p>
         Een andere hobby van mij is fietsen, sinds ik klein was ging ik altijd met mijn ouders fietsen in de zomer, 
         ook <br> al wordt het nu minder gedaan, toch is fietsen een moment gebleven waar ik me even op niets moet concentreren.
     </p>
-    <img src="data/img/Fiets.jpg" alt="Afbeelding fiets" title="Fiets" width="400">
     <h3>Servers bouwen en het leveren van services : </h3>
     <p>
         Sinds de start van mijn opleiding ben ik steeds meer geintreseerd geraakt in het bouwen van <br> servers waarop
         ik services kan aanbieden aan vrienden en famillie, zo heb ik al een vpn server <br> opgezet om het thuisnetwerk
         altijd te kunnen berijken en heb ik nog vele plannen voor wanneer mijn famillie naar spanje zou emigreren.
     </p>
-    <img src="data/img/server.jpeg" alt="Afbeelding server" title="Server" width="400">
     <h3>Automatisatie en IOT</h3>
     <p>Wegens mijn vorige opleiding heb ik een passie gekregen voor automatisatie en IOT, <br> 
         dankzij de opleiding die ik nu volg kan ik deze passie beter realiseren omdat 
@@ -41,35 +117,25 @@
         met <br> mijn eletrische kennis waardoor ik leuke projecten kan uitvoeren, 
         ook had ik altijd al een grote interessen in "Single Board Computers".
     </p>
-    <img src="data/img/IOT.jpg" alt="Afbeelding IOT" title="IOT" width="400">
     <br>
     <hr>
-    <form action="cv.html">
-        <input type="submit" value="Volgende">
-    </form>
     <br>
+    <div class="pagebutton">
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="over_mij.html" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="cv.html">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <br>
     </div>
-    <div class="Navigatie" style="float: right;">
-        <table border="1">
-            <caption>Navigatie</caption>
-                <tr>
-                    <td><a href="index.html">Homepagina</a></td>
-                </tr>
-                <tr>
-                    <td><a href="over_mij.html">Over mezelf</a></td>
-                </tr>
-                <tr>
-                    <td><a href="hobby.html">Hobby's</a></td>
-                </tr>
-                <tr>
-                    <td><a href="cv.html">CV</a></td>
-                </tr>
-                <tr>
-                    <td><a href="ervaring.html">Ervaring</a></td>
-                </tr>
-                <tr>
-                    <td><a href="contact.html">Contact</a></td>
-                </tr>
-        </table>
-    </div>
+    <footer class="bg-dark text-center text-white">
+        <p>Anthony Van Roy &copy; 2022</p>
+    </footer>
 </body>
+</html>

@@ -1,0 +1,41 @@
+html,body {
+    height: 100%;
+}
+
+.Index_Pagina {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    height: auto;
+    align-items: center;
+}
+
+.Over_Mij_Pagina {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    height: auto;
+}
+
+.pagebutton {
+    position: relative;
+    align-items: center;
+}
+
+.slideshow {
+    width: 50%;
+}
+
+.contact-formulier {
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
